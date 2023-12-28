@@ -49,7 +49,7 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>CGPA</h5>
-              <small>8.34</small>
+              <small>8.38</small>
             </article>
 
             <article className='about__card'>

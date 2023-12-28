@@ -1,3 +1,8 @@
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
 .container.testimonials__container {
     width: 40%;
     padding-bottom: 4rem;
@@ -34,6 +39,10 @@
 
 /* Media Quries(Medium Devices) */
 @media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
     .container.testimonials__container {
         width: 60%;
     }
@@ -41,6 +50,10 @@
 
 /* Media Quries(Small Devices) */
 @media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
     .container.testimonials__container {
         width: var(--container-width-sm);
     }

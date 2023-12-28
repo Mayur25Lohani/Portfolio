@@ -9,6 +9,11 @@ header{
     position: relative;
 }
 
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}  
+
 /* CTA */
 .cta{
     margin-top: 2.5rem;
@@ -66,6 +71,10 @@ header{
 
 /* Media Quries(Medium Devices) */
 @media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
     header{
         height: 68vh;
     }
@@ -73,6 +82,10 @@ header{
 
 /* Media Quries(Small Devices) */
 @media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+    
     header{
         height: 100vh;
     }

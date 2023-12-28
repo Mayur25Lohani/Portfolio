@@ -1,6 +1,11 @@
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
 .services__container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
 }
 
@@ -50,20 +55,12 @@
     font-size: 0.9rem;
 }
 
-/* Media Quries(Medium Devices) */
-@media screen and (max-width: 1024px) {
-    .services__container{
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-
-    .service {
-        height: auto;
-    }
-}
-
 /* Media Quries(Small Devices) */
 @media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
     .services__container {
         grid-template-columns: 1fr;
         gap: 1.5rem;

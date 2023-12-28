@@ -1,3 +1,8 @@
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
 .container.contact__container {
     width: 58%;
     display: grid;
@@ -67,6 +72,10 @@ input, textarea {
 
 /* Media Quries(Medium Devices) */
 @media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
     .container.contact__container {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -75,6 +84,10 @@ input, textarea {
 
 /* Media Quries(Small Devices) */
 @media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+    
     .container.contact__container {
         width: var(--container-width-sm);
     }

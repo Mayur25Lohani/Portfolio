@@ -1,3 +1,8 @@
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
@@ -21,7 +26,7 @@
 .about__me-image {
   border-radius: 2rem;
   overflow: hidden;
-  transform: rotate(10deg);
+  transform: rotate(5deg);
   transition: var(--transition);
 }
 
@@ -71,6 +76,10 @@
 
 /* Media Quries(Medium Devices) */
 @media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;
@@ -88,6 +97,10 @@
 
 /* Media Quries(Small Devices) */
 @media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  
   .about__me {
     width: 65%;
     margin: 0 auto 3rem;

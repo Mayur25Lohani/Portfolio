@@ -1,3 +1,8 @@
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -34,6 +39,10 @@
 
 /* Media Quries(Medium Devices) */
 @media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
     .portfolio__container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
@@ -42,6 +51,10 @@
 
 /* Media Quries(Small Devices) */
 @media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
     .portfolio__container {
         grid-template-columns: 1fr;
         gap: 1rem;
